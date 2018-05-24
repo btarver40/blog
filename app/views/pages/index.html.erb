@@ -1,0 +1,9 @@
+<h1>Pages</h1>
+<p>
+<%= link_to 'New Page', new_page_path %>
+</p>
+<% @pages.each do |page| %>
+<h2><%= page.title %></h2>
+<%= link_to 'Show', page_path(page) %>
+<% end %>
+
